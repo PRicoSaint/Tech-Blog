@@ -35,11 +35,18 @@ router.get('/post/:id', async (req, res) => {
           model: User,
           attributes: ['name'],
         },
+        {
+          model: Comment,
+          attributes: ['content', 'user_id','date_created'],
+        },
       ],
     });
-    // TODO: ADD GRABBING OF COMMENTS THAT ARE ATTACHED TO THIS POST.id
+
+    // TODO: USER_ID needs to be displayed as name of corresponding value in user table
+    // TODO: Its showing up as a number
 
     const post = postData.get({ plain: true });
+    console.log(post);
 
     res.render('post', {
       ...post,
