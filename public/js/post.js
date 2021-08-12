@@ -27,6 +27,8 @@ const submitComment = async (event) => {
         postID = event.target.getAttribute('data-id');
     }; 
     event.preventDefault();
+    const btn = document.querySelector("#comment-btn");
+    btn.setAttribute("class", "btn btn-primary hidden");
     let addItemHere = document.querySelector('#start-here');
     let formBox = document.createElement("div");
     formBox.setAttribute("class", "");
@@ -44,7 +46,9 @@ const submitComment = async (event) => {
     let submitBtn = document.createElement("button");
     submitBtn.setAttribute("type","submit");
     submitBtn.setAttribute("class","btn btn-primary");
+    submitBtn.setAttribute("id","submit-btn");
     submitBtn.textContent = 'Submit';
+
 
     addItemHere.appendChild(formBox);
     formBox.appendChild(formTitle);
@@ -52,6 +56,9 @@ const submitComment = async (event) => {
     form.appendChild(divForm);
     divForm.appendChild(inputForm);
     formBox.appendChild(submitBtn);
+    document
+    .querySelector('#submit-btn')
+    .addEventListener('click', submitComment);
   };
   
   document

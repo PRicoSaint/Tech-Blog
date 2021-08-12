@@ -14,9 +14,13 @@
   <div id="start-here">
 
   </div>
+  {{#if logged_in}}
   <p>
     <button class="btn btn-primary" id="comment-btn" data-id = "{{id}}">Comment!</button>
   </p>
+  {{else}}
+  <a href="/login">Please log in to comment!</a>
+  {{/if}}
 </div>
 
 

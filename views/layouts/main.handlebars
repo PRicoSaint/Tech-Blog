@@ -14,14 +14,16 @@
     <header class="display-flex justify-space-between align-center p-2">
       <h1>
         <span role="img" aria-label="PC">💻</span>
-        <a href="/">Tech Blog</a>
+        Tech Blog
       </h1>
       <nav>
+        <a href="/">Homepage</a> |
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
         <a href="/dashboard">Dashboard</a> |
         <button class="no-button" id="logout">logout</button>
         {{else}}
+        <a href="/login">Dashboard</a> |
         <a href="/login">login</a>
         {{/if}}
       </nav>
