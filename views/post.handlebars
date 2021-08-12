@@ -7,7 +7,7 @@
   <div class="text-center">
   <h2>Comment</h2>
   <p>{{comments.content}}</p>
-  <p>Created by {{comments.user_id}} on {{format_date comments.date_created}}</p>
+  <p>Created by {{user.name}} on {{format_date comments.date_created}}</p>
 </div>
   {{/each}}
   {{/if}}

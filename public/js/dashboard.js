@@ -36,7 +36,7 @@ const delButtonHandler = async (event) => {
     }
   }else if(event.target.hasAttribute('data-id') && event.target.getAttribute('id') == "update"){
     const id = event.target.getAttribute('data-id');
-    const response = await fetch(`/post/${id}`, {
+    const response = await fetch(`/update/${id}`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',

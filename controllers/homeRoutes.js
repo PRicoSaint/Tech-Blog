@@ -37,13 +37,10 @@ router.get('/post/:id', async (req, res) => {
         },
         {
           model: Comment,
-          attributes: ['content', 'user_id','date_created'],
+          include: [User],
         },
       ],
     });
-
-    // TODO: USER_ID needs to be displayed as name of corresponding value in user table
-    // TODO: Its showing up as a number
 
     const post = postData.get({ plain: true });
     console.log(post);
@@ -52,6 +49,33 @@ router.get('/post/:id', async (req, res) => {
       ...post,
       logged_in: req.session.logged_in
     });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
+
+router.get('/update/:id', async (req, res) => {
+  try {
+    const postData = await Post.findByPk(req.params.id, {
+      include: [
+        {
+          model: User,
+          attributes: ['name'],
+        },
+        {
+          model: Comment,
+          include: ['content', 'user_id','date_created'],
+        },
+      ],
+    });
+
+    const post = postData.get({ plain: true });
+    console.log(post);
+    res.write(JSON.stringify(post));
+    // let oldPost = JSON.stringify(post);
+    // console.log(oldPost);
+    // res.json(oldPost);
+
   } catch (err) {
     res.status(500).json(err);
   }
