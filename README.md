@@ -2,7 +2,7 @@
 
   ## Description:
 
-    This is a complete app that mimics wordpress blog functionality. New visitor can see blog posts and comments but needs login to be able to comment and make new blog posts. Sign up is completed through the server with name, email, and password. Password is encrypted. Blog posts created by logged in user can be viewed in dashboard. They can be deleted. They will be able to be updated in future update. User will timeout due to inactivity as well and will need to log back in.
+This is a complete app that mimics wordpress blog functionality. New visitor can see blog posts and comments but needs login to be able to comment and make new blog posts. Sign up is completed through the server with name, email, and password. Password is encrypted. Blog posts created by logged in user can be viewed in dashboard. They can be deleted. They will be able to be updated in future update. User will timeout due to inactivity as well and will need to log back in.
 
   ## Table of Contents:
   * [Description](#Description)

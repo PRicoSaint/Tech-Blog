@@ -16,7 +16,7 @@ const signupFormHandler = async (event) => {
       if (response.ok) {
         document.location.replace('/dashboard');
       } else {
-        alert(response.statusText);
+        alert('There is a problem with your sign up information. Please make sure the password is at least 8 characters long' + response.statusText);
       }
     }
   };

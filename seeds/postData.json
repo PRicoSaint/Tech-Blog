@@ -1,14 +1,14 @@
 [
   {
-    "name": "Blog Post 1",
-    "description": "This is a test for the blog #1"
+    "name": "I love computers",
+    "description": "Computers are the best thing in the world. They allow me to do so much. When connected to the internet, I can message my friends, see the news and even write in blogs like this. This is awesome!!"
   },
   {
-    "name": "Blog Post 2",
-    "description": "This is a test for blog #2"
+    "name": "Why my PC broke",
+    "description": "I was trying to overclock it to the max and I thought I had it running great. This was going to be my mining rig. Unfortunately, the heat was too much and my 6 graphics cards caused a small fire. I have lost everything."
   },
   {
-    "name": "Blog post 3",
-    "description": "This is a test for blog post #3"
+    "name": "A new beginning",
+    "description": "After cashing in the insurance check, I have decided to take it easy for a while. I am going to start slow and then begin building small. Instead of going 1-100. This will serve me well in the future."
     }
 ]

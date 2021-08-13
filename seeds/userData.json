@@ -1,17 +1,17 @@
 [
   {
-    "name": "Sal",
-    "email": "sal@hotmail.com",
-    "password": "password12345"
+    "name": "Tony Stark",
+    "email": "tony@starkindustries.com",
+    "password": "iamthebest34"
   },
   {
-    "name": "Lernantino",
-    "email": "lernantino@gmail.com",
-    "password": "password12345"
+    "name": "Peter Parker",
+    "email": "pparker@hotmail.com",
+    "password": "randomDude123"
   },
   {
-    "name": "Amiko",
-    "email": "amiko2k20@aol.com",
-    "password": "password12345"
+    "name": "Osbourne",
+    "email": "notarealemail@gmail.com",
+    "password": "iamthebadguy90"
   }
 ]
