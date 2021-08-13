@@ -50,22 +50,21 @@ This is a complete app that mimics wordpress blog functionality. New visitor can
   Github Repository: https://github.com/PRicoSaint/Tech-Blog
 
   Deployed Site here: 
- HEROKU LINK GOES HERE
+ https://guarded-peak-10394.herokuapp.com/
 
   Screenshot:
   
-<!-- ![Tech-Blog](./assets/images/Tech-Blog.gif) -->
-Screenshot will be found here
+![Tech-Blog](Tech_Blog.gif)
 
   
   ## Technologies-Used:
   
-    HTML
+  HTML
 	CSS
 	Javascript
 	node.js
 	MySQL
-    Handlebars
+  Handlebars
 
 
 ## Any questions/suggestions/critique?
